@@ -62,7 +62,7 @@ function addMessage(name, msg){
   msgNode.classList.add('message')
   setTimeout(function(){
     msgNode.classList.add('normal')
-  }, 2000)
+  }, 1000)
   document.body.querySelector('main').appendChild(msgNode)
   console.log(getComputedStyle(msgNode).width)
 }

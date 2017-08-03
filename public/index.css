@@ -20,10 +20,12 @@ main .message {
   top: 50%;
   transform: translate(-50%, -50%);
   font-size: 80px;
+  border-bottom: 1p dashed #eee;
   transition: all .4s;
 }
 main .message>span{
   display: none;
+  font-size: 12px;
 }
 
 main .message.normal{

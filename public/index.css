@@ -9,7 +9,7 @@ html,body{
 }
 
 main {
-  height: calc(100% - 40px);
+  margin-bottom: 40px;
   padding: 20px;
   line-height: 1.5;
 }
@@ -20,7 +20,6 @@ main .message {
   top: 50%;
   transform: translate(-50%, -50%);
   font-size: 80px;
-  border-bottom: 1p dashed #eee;
   transition: all .4s;
 }
 main .message>span{
@@ -41,6 +40,9 @@ main .message.normal>span{
 }
 
 footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
   height: 40px;
   background: rgba(0,0,0,0.6);
   text-align: center;

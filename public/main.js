@@ -43,6 +43,11 @@ document.querySelector('footer input').onchange = function(){
 
 document.querySelector('footer .name').onblur = function(e){
   console.log(this.value)
+  if(this.innerText == ''){
+    alert('名字不能为空')
+    this.innerText = localStorage.name || '游客'
+    return 
+  }
   localStorage.name = this.innerText
 }
 
